@@ -76,30 +76,28 @@ app.get('/kevin', (req, res) => {
 
 });
 
-app.get('/flours', (req, res) => {
+app.get('/api/flours', (req, res) => {
   MongoClient.connect(url, function (error, databases) {
     if (error) {
       throw error;
 
     }
-    var pract;
-    var p;
+    var pract ;
     var nodtst = databases.db("super_market");
     nodtst.collection("product").find({ category: "Flour" }).toArray(function (err, totalpract) {
       if (err) throw err;
 
-      p = totalpract[0];
-      // console.log(totalpract);
-      // console.log(totalpract[1]);
+     
+      console.log(totalpract[1]);
       for (i = 0; i < totalpract.length; i++) {
-        let pract = totalpract[i];
-        //    console.log("Working");
-        // // console.log(pract.Product_Name);
-        // console.log(pract);
+        pract = totalpract[i];
+        console.log("Working kevin");
+        
       }
-      console.log(p);
-      //  res.render("t", { pract : p })
-      res.sendfile("hello.html");
+       
+      console.log(pract)
+      res.send( totalpract);
+
       //console.log(result);  
       databases.close();
     });
@@ -136,7 +134,35 @@ app.get('/api/fruits', (req, res) => {
   });
 
 });
-app.get('/vegetables', (req, res) => {
+app.get('/api/dryfruit', (req, res) => {
+  MongoClient.connect(url, function (error, databases) {
+    if (error) {
+      throw error;
+
+    }
+    var pract ;
+    var nodtst = databases.db("super_market");
+    nodtst.collection("product").find({ category: "Dry Fruit" }).toArray(function (err, totalpract) {
+      if (err) throw err;
+
+     
+      console.log(totalpract[1]);
+      for (i = 0; i < totalpract.length; i++) {
+        pract = totalpract[i];
+        console.log("Working kevin");
+        
+      }
+       
+      console.log(pract)
+      res.send( totalpract);
+
+      //console.log(result);  
+      databases.close();
+    });
+  });
+
+});
+app.get('/api/vegetables', (req, res) => {
   MongoClient.connect(url, function (error, databases) {
     if (error) {
       throw error;
@@ -165,7 +191,7 @@ app.get('/vegetables', (req, res) => {
   });
 
 });
-app.get('/pulses', (req, res) => {
+app.get('/api/pulses', (req, res) => {
   MongoClient.connect(url, function (error, databases) {
     if (error) {
       throw error;
@@ -193,7 +219,7 @@ app.get('/pulses', (req, res) => {
   });
 
 });
-app.get('/spices', (req, res) => {
+app.get('/api/spices', (req, res) => {
   MongoClient.connect(url, function (error, databases) {
     if (error) {
       throw error;
@@ -222,7 +248,7 @@ app.get('/spices', (req, res) => {
   });
 
 });
-app.get('/checkout', (req, res) => {
+app.get('/api/checkout', (req, res) => {
   MongoClient.connect(url, function (error, databases) {
     if (error) {
       throw error;

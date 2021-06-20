@@ -203,7 +203,7 @@ module.exports = require("react/jsx-dev-runtime");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, ["vendors-node_modules_babel_runtime_helpers_interopRequireDefault_js-node_modules_next_dist_cl-3e6c6e","vendors-node_modules_next_image_js","services_UserService_js","components_Layout_components_Category_Category_jsx-components_Layout_components_PageName_Page-d54102","components_Layout_components_HomeCategories_HomeCategories_jsx"], function() { return __webpack_exec__("./pages/blog.js"); });
+var __webpack_exports__ = __webpack_require__.X(0, ["vendors-node_modules_babel_runtime_helpers_interopRequireDefault_js-node_modules_next_dist_cl-3e6c6e","vendors-node_modules_next_image_js","services_UserService_js","components_Layout_components_HomeCategories_HomeCategories_jsx","components_Layout_components_Category_Category_jsx-components_Layout_components_PageName_Page-d54102"], function() { return __webpack_exec__("./pages/blog.js"); });
 module.exports = __webpack_exports__;
 
 })();

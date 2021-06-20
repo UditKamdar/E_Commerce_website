@@ -6,14 +6,26 @@ import SliderList from '../components/Layout/components/SliderList/SliderList'
 
 import styles from '../styles/Home.module.css'
 import MyApp from './_app'
-import { trial,t1 } from '../services/UserService'
+import { trial, t1 } from '../services/UserService'
 
 
 
 export default function Home() {
-   
+
   return (
     <>
+      {/* <Head>
+        <script src="js/jquery-3.3.1.min.js" ></script>
+        <script src="js/bootstrap.min.js%2bjquery.nice-select.min.js.pagespeed.jc.08NHUfMhux.js"></script>
+        <script >eval(mod_pagespeed_ND6iIrfFHB);</script>
+        <script >eval(mod_pagespeed_2CR7bSFHcL);</script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script> 
+      </Head> */}
       <HomeCategories />
       <SliderList />
       <section className="featured spad">
@@ -174,7 +186,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src="img/blog/xblog-1.jpg.pagespeed.ic.LxmSdcElIm.jpg"  />
+                  <img src="img/blog/xblog-1.jpg.pagespeed.ic.LxmSdcElIm.jpg" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -189,7 +201,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src="img/blog/xblog-2.jpg.pagespeed.ic.BEPbl29gdJ.jpg"  />
+                  <img src="img/blog/xblog-2.jpg.pagespeed.ic.BEPbl29gdJ.jpg" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -204,7 +216,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src="img/blog/xblog-3.jpg.pagespeed.ic.cmlGgG7W6t.jpg"  />
+                  <img src="img/blog/xblog-3.jpg.pagespeed.ic.cmlGgG7W6t.jpg" />
                 </div>
                 <div className="blog__item__text">
                   <ul>

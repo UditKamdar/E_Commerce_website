@@ -31,7 +31,7 @@ export default function blog() {
                 const { data } = await axios.get('/api/fruits');
                 console.log(data);
                 console.log("Working udit")
-                setProductsa(dat);
+                setProducts(data);
             } catch (err) {
                 console.log(" not Working udit")
             }
